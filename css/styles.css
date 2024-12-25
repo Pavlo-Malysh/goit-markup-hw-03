@@ -14,6 +14,10 @@ body {
     color: #434455;
 }
 
+.visually-hidden {
+    display: none;
+}
+
 h1,
 h2,
 h3,
@@ -57,6 +61,7 @@ img {
     border: none;
     display: block;
     margin: 0 auto;
+    min-width: 169px;
 
 }
 
@@ -99,7 +104,7 @@ img {
     color: #2e2f42;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .subtitle {
@@ -108,6 +113,7 @@ img {
     line-height: 1.2;
     color: #2e2f42;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .text-section {
@@ -128,20 +134,22 @@ img {
 
 .logo-dark {
     color: #2e2f42;
+    margin-right: 76px;
 }
 
-.container-header {
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-bottom: 1px solid #e7e9fc;
 }
 
 .nav-header {
     display: flex;
-    gap: 76px;
+    align-items: center;
 }
 
 .nav-list {
@@ -152,6 +160,7 @@ img {
 .nav-item {
     font-weight: 500;
     color: #2e2f42;
+    padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -201,10 +210,6 @@ img {
     width: calc((100% - 72px) / 4);
 }
 
-.benefits-item .subtitle {
-    padding-bottom: 8px;
-}
-
 .benefits-list {
     display: flex;
     gap: 24px;
@@ -232,15 +237,17 @@ img {
     object-fit: cover;
 }
 
+.card-text-container {
+    padding: 32px 0;
+}
+
 .card-teams .subtitle {
     text-align: center;
-    padding-top: 32px;
-    padding-bottom: 8px;
+
 }
 
 .card-teams .text-section {
     text-align: center;
-    padding-bottom: 32px;
 }
 
 .list-teams {
@@ -259,15 +266,7 @@ img {
 .card-subcontainer {
     border: 1px solid #e7e9fc;
     border-top: none;
-}
-
-.card-portfolio .subtitle {
-    padding-top: 32px;
-    padding-bottom: 8px;
-}
-
-.card-portfolio .text-section {
-    padding-bottom: 32px;
+    padding: 32px 16px;
 }
 
 .card-portfolio img {
@@ -282,6 +281,8 @@ img {
     justify-content: center;
 }
 
+/* Footer */
+
 .footer {
     background: #2e2f42;
     padding-top: 100px;
@@ -292,8 +293,12 @@ img {
     color: #f4f4fd;
 }
 
+.footer-link {
+    margin-bottom: 16px;
+    display: inline-block;
+}
+
 .text-footer {
     color: #f4f4fd;
-    padding-top: 16px;
     max-width: 264px;
 }
