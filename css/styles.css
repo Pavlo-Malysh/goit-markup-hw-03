@@ -15,12 +15,15 @@ body {
 }
 
 .visually-hidden {
-    /* display: none; */
     position: absolute;
-    left: -9999px;
-    top: auto;
     width: 1px;
     height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0 0);
     overflow: hidden;
 }
 
@@ -169,10 +172,10 @@ img {
 .nav-item {
     font-weight: 500;
     color: #2e2f42;
-    padding: 24px 0;
 }
 
 .nav-link {
+    display: block;
     padding: 24px 0;
 }
 
